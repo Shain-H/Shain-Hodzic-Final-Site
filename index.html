@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Koulen&display=swap" rel="stylesheet">
+    <title>Home | Shain Hodzic</title>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>I'm Shain! Welcome to my site!</h1>
+        </div>
+    </div>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="myportfolio.html">My Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class = "Animation">
+    <canvas id="Canvas" width="1880" height="100" style="border: 1px solid red;"></canvas>
+    <script>
+        
+    const FPS = 120;
+    var bs = 30;
+    var bx, by;
+    var xv, yv;
+    var canvas, context;
+        
+    canvas = document.getElementById("Canvas");
+    context = canvas.getContext("2d");
+    setInterval(update, 1000 / FPS);
+    bx = canvas.width / 2;
+    by = canvas.height / 2;
+        
+    xv = Math.floor(Math.random() * 76 + 100) / FPS;
+    yv = Math.floor(Math.random() * 76 + 100) / FPS;
+
+    if (Math.floor(Math.random() * 2) == 0) {
+        xv = -xv;
+    }
+    if (Math.floor(Math.random() * 2) == 0) {
+        yv = -yv;
+    }
+        
+    function update() {
+
+        bx += xv;
+        by += yv;
+            
+        if (bx - bs / 2 < 0 && xv < 0) {
+            xv = -xv;
+        }
+        if (bx + bs / 2 > canvas.width && xv > 0) {
+            xv = -xv;
+        }
+        if (by - bs / 2 < 0 && yv < 0) {
+            yv = -yv;
+        }
+        if (by + bs / 2 > canvas.height && yv > 0) {
+            yv = -yv;
+        }
+        context.fillStyle = "black";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+        context.fillStyle = "red";
+        context.fillRect(bx - bs / 2, by - bs / 2, bs, bs);
+    }
+</script>
+</div>
+
+<div class="stuff" id="section">
+ <p>Hello! Welcome to my site! Here you will read about me, see
+    my Portfolio, and contact me!</p> 
+</div>
