@@ -75,6 +75,52 @@ div.stuff {
     padding: 20px;
 }
 
+div.stuff2 {
+    width: 325px;
+    height:450px;
+    /* height: fit-content; */
+    word-wrap: break-word;
+    overflow: auto;
+    text-align: left;
+    border-width: 20px;
+    border-style: inset;
+    border-color: rgb(165, 0, 0);
+    float: left;
+    margin: 10px;
+    padding: 20px;
+}
+
+div.stuff3 {
+    width: 400px;
+    height:300px;
+    /* height: fit-content; */
+    word-wrap: break-word;
+    overflow: auto;
+    text-align: left;
+    border-width: 20px;
+    border-style: dotted;
+    border-color: rgb(165, 0, 0);
+    float: left;
+    margin: 10px;
+    padding: 20px;
+}
+
+div.stuff4 {
+    width: 1780px;
+    height:200px;
+    font-size: 23px;
+    /* height: fit-content; */
+    word-wrap: break-word;
+    overflow: auto;
+    text-align: left;
+    border-width: 20px;
+    border-style: dotted;
+    border-color: rgb(165, 0, 0);
+    float: left;
+    margin: 10px;
+    padding: 20px;
+}
+
 div#section {
     background-color: red;
 }
