@@ -22,12 +22,14 @@
         <a href="myportfolio.html">My Portfolio</a>
         <a href="contact.html">Contact</a>
     </div>
-    <div class = "Animation">
-    <canvas id="Canvas" width="1880" height="100" style="border: 1px solid red;"></canvas>
-    <script>
+
+<div class = "Animation">
+<canvas id="Canvas" width="1880" height="100" style="border: 1px solid red;"></canvas>
+
+<script>
         
-    const FPS = 120;
-    var bs = 30;
+    const FPS = 60;
+    var bs = 100;
     var bx, by;
     var xv, yv;
     var canvas, context;
@@ -38,8 +40,8 @@
     bx = canvas.width / 2;
     by = canvas.height / 2;
         
-    xv = Math.floor(Math.random() * 76 + 100) / FPS;
-    yv = Math.floor(Math.random() * 76 + 100) / FPS;
+    xv = Math.floor(Math.random() * 76 + 120) / FPS;
+    yv = Math.floor(Math.random() * 76 + 120) / FPS;
 
     if (Math.floor(Math.random() * 2) == 0) {
         xv = -xv;
@@ -74,6 +76,59 @@
 </div>
 
 <div class="stuff" id="section">
- <p>Hello! Welcome to my site! Here you will read about me, see
-    my Portfolio, and contact me!</p> 
+ <p style="color:white;" style="font-size: 30px;">Hello! Welcome to my site! Here you will read about me, see
+    my Portfolio, and be able to contact me!</p> 
+</div>
+
+<div>
+    <canvas id="myCanvas2" width="1550" height="470" style="border:1px solid #ff0000;"></canvas>
+    <script>
+        var canvas = document.getElementById("myCanvas2");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(0, 0, 100, 75);
+        ctx.fillRect(200, 0, 100, 75);
+        ctx.fillRect(400, 0, 100, 75);
+        ctx.fillRect(600, 0, 100, 75);
+        ctx.fillRect(800, 0, 100, 75);
+        ctx.fillRect(1000, 0, 100, 75);
+        ctx.fillRect(1200, 0, 100, 75);
+        ctx.fillRect(1400, 0, 100, 75);
+
+        ctx.fillRect(100, 100, 100, 75);
+        ctx.fillRect(300, 100, 100, 75);
+        ctx.fillRect(500, 100, 100, 75);
+        ctx.fillRect(700, 100, 100, 75);
+        ctx.fillRect(900, 100, 100, 75);
+        ctx.fillRect(1100, 100, 100, 75);
+        ctx.fillRect(1300, 100, 100, 75);
+        ctx.fillRect(1500, 100, 100, 75);
+
+        ctx.fillRect(0, 200, 100, 75);
+        ctx.fillRect(200, 200, 100, 75);
+        ctx.fillRect(400, 200, 100, 75);
+        ctx.fillRect(600, 200, 100, 75);
+        ctx.fillRect(800, 200, 100, 75);
+        ctx.fillRect(1000, 200, 100, 75);
+        ctx.fillRect(1200, 200, 100, 75);
+        ctx.fillRect(1400, 200, 100, 75);
+
+        ctx.fillRect(100, 300, 100, 75);
+        ctx.fillRect(300, 300, 100, 75);
+        ctx.fillRect(500, 300, 100, 75);
+        ctx.fillRect(700, 300, 100, 75);
+        ctx.fillRect(900, 300, 100, 75);
+        ctx.fillRect(1100, 300, 100, 75);
+        ctx.fillRect(1300, 300, 100, 75);
+        ctx.fillRect(1500, 300, 100, 75);
+
+        ctx.fillRect(0, 400, 100, 75);
+        ctx.fillRect(200, 400, 100, 75);
+        ctx.fillRect(400, 400, 100, 75);
+        ctx.fillRect(600, 400, 100, 75);
+        ctx.fillRect(800, 400, 100, 75);
+        ctx.fillRect(1000, 400, 100, 75);
+        ctx.fillRect(1200, 400, 100, 75);
+        ctx.fillRect(1400, 400, 100, 75);
+    </script>
 </div>
